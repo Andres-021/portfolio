@@ -1,4 +1,14 @@
-.contenido{
-  margin: 0 auto;
+.app-contenido{
+  background: #122a4680;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
   text-align: center;
+}
+
+.app-tittle-1{
+  padding-top: 15%;
+  padding-bottom: 20%;
+  color: white;
+  font-size: 50px;
 }

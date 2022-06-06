@@ -7,8 +7,11 @@ import './css/app.css'
 const App = () => {
 
   return(
-    <div className="contenido">
+    <div className="app-contenido">
       <Nav/>
+      <header className="app-tittle-1">
+        <h1 id="app-tittle">Andres Quintero</h1>
+      </header>
       <Section
         title="Section 1"
         subtitle={    

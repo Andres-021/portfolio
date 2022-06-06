@@ -24,7 +24,7 @@ const Nav = () => {
             offset={-70}
             duration={500}
           >
-            Inicio
+            Sobre mi
           </Link>
         </li>
         <li>
@@ -36,7 +36,7 @@ const Nav = () => {
             offset={-70}
             duration={500}
           >
-            Sobre mi
+            Proyectos
           </Link>
         </li>
         <li>
@@ -48,7 +48,7 @@ const Nav = () => {
             offset={-70}
             duration={500}
           >
-            Proyectos
+            Otras cosas
           </Link>
         </li>
       </ul>
