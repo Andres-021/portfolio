@@ -1,6 +1,7 @@
 :root{
+  --c-extra: ;
   --color:white;
-  --fnd : #008ac6;
+  --fnd : #122a46;
   --fndRsp: white;
   --colorRsp: black;
 }
@@ -8,16 +9,27 @@
 .Nav-Content{
   font-family: sans-serif;
   display:flex;
-  justify-content: space-between;
-  background:var(--fnd);
+  align-items: center;
+  justify-content: center;
+  /* Color */
+  /* background: var(--fnd); */
+
   color: var(--color);
+  /* Posicionamiento y fijado */
+  position:fixed;
+  /* Centrado y flote */
+  top: 0;
+  left: 0;
+
+  height: 100%;
+
 }
 
-.Nav-Content .Nav{
-  margin:0 10px 0 0;
-}
+/* .Nav-Content .Nav{
+  margin:0 0px 0 0;
+} */
 
-.Nav-Content .Nav-Tittle{
+/* .Nav-Content .Nav-Tittle{
   display:flex;
   justify-content:space-between;
   align-items:center;
@@ -29,39 +41,60 @@
 
 .Nav-Content .Nav-Tittle .logo{
   margin: 10px 10px;
-}
+} */
 
 .Nav-Content .Nav{
   display:flex;
   list-style:none;
   align-items: center;
-  padding:0;
+  padding-left: 100px;
+  overflow: hidden;
 }
 
 .Nav {
   display: flex;
-  justify-content: end;
-  align-items: end;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   /* width: 80%;o lo necesario */
   margin: auto;
 }
 
-.Nav-Content .Nav li{
+/* .Nav-Content .Nav li{
   display:flex;
+  justify-content: center;
   align-items:center;
-  padding: 0 20px ;
+  padding: 20px 40px;
   height:100%;
-  
+  width: 100%;
+} */
+
+li{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  border-radius:50%;
+  height: 80px;
+  width: 80px;
+  margin-top: 10px;
+  border: 2px solid var(--color);
+  transition: 0.5s;
 }
 
 .Nav-Content .Nav li:hover{
   background: var(--color);
   color:var(--fnd);
   cursor: pointer;
+  border: 5px solid var(--fnd);
+  height: 120px;
+  width: 120px;
+  transition: 0.5s;
 }
 
+/* Cambiando el diseño de los linsk e items */
 .Nav-Content .Nav li a{
+  display: block;
   text-decoration: none;
   cursor: pointer;
-  color:inherit;
+  color: inherit;
 }

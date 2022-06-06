@@ -1,0 +1,16 @@
+.section {
+  padding-top: 10%;
+  padding-bottom: 15%;
+}
+
+.section-dark {
+  background: #0c3a56;
+  color: white;
+}
+
+.section-content {
+  max-width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 40px;
+}
