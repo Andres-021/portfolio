@@ -1,9 +1,13 @@
 .app-contenido{
-  background: #122a4680;
+  position: absolute;
+  /* background-image: url('../../public/blob.svg'); */
+  background-color: rgb(37, 37, 37);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-blend-mode: darken;
   text-align: center;
+
+  height: 100vh;
 }
 
 .app-tittle-1{
@@ -11,4 +15,13 @@
   padding-bottom: 20%;
   color: white;
   font-size: 50px;
+  height: auto;
 }
+
+/* svg{
+  position: relative;
+  z-index: 1;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+} */

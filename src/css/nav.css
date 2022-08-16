@@ -1,7 +1,7 @@
 :root{
   --c-extra: ;
   --color:white;
-  --fnd : #122a46;
+  --fnd : #2196F3;
   --fndRsp: white;
   --colorRsp: black;
 }
@@ -17,6 +17,7 @@
   color: var(--color);
   /* Posicionamiento y fijado */
   position:fixed;
+  z-index: 5;
   /* Centrado y flote */
   top: 0;
   left: 0;
