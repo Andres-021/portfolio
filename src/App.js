@@ -51,7 +51,7 @@ const App = () => {
       />
 
       <Section
-        title="Section 3"
+        title="Otras cosas"
         subtitle={    
           <div>
             <p>
