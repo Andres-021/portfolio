@@ -4,6 +4,29 @@
 
 * {
   font-family: Roboto;
+  box-sizing: border-box;
+}
+
+
+
+
+.div-wrapp{
+  display: flex;
+  flex-direction: row;
+
+  /* background-color: aqua; */
+  padding: 0px;
+
+  width: auto;
+  max-height: 300px;
+  padding: 10px;
+
+  overflow-y: hidden;
+  overflow-x: auto;
+
+  scroll-behavior: smooth;
+
+  white-space: nowrap;
 }
 
 
@@ -11,3 +34,30 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
+/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+/* 
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+  width:10px;
+}
+
+::-webkit-scrollbar-button:increment,::-webkit-scrollbar-button {
+  display: none;
+} 
+
+::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;  
+} */

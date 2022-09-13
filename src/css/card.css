@@ -1,11 +1,11 @@
 /* // Inicio carta */
 .container .card{
     position: relative;
-    max-width: 150px;
-    height: 130px;
+    max-width: 250px;
+    height: 210px;
     background: #fff;
-    margin: 100px 60px;
-    padding: 20px 20px;
+    margin: 50px 10px;
+    padding: 20px 2px;
     display: flex;
     flex-direction: column;
 
@@ -13,45 +13,106 @@
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     transition: 0.4s ease-in-out;
   }
+
+/* Flecha de mostrar mas */
+.container .card .arrow{
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  transform: translate(0, -50%);
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* transform: rotate(90deg); */
+    cursor: pointer;
+
+    z-index: 2;
+    justify-content: center;
+}
+
+.container .card .arrow span{
+  /* Centrado item */
+  position: relative;
+  top: 0;
+  left: 50%;
+
+  margin: -25px 0 0 -25px;
+    display: block;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-bottom: 5px solid rgb(85, 85, 85);
+    border-right: 5px solid rgb(85, 85, 85);
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.container .card .arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+
+
+@keyframes animate{
+    0%{
+      opacity: 0;
+      transform: rotate(45deg) translate(-2px, -2px);
+    }
+    50%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+      transform: rotate(45deg) translate(2px, 2px);
+    }
+}
+
+
+
+.container .card:hover .arrow{
+  visibility: hidden;
+  transition: 0.4s  ease-in-out;
+}
+
+  /* Fin fecha de mostrar mas */
   
-  .container .card:hover{
-    height: 170px;
+.container .card:hover{
+    height: 230px;
     cursor: pointer;
     transition-delay: 0.4s;
-  }
+}
   
   /* Inicio imagen */
-  .container .card .imgBx{
+.container .card .imgBx{
     position: relative;
-    width: 150px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     top: -60px;
     left: 0;
     right: 0;
     z-index: 1;
-  }
+}
   
-  .container .card:hover .imgBx a{
+.container .card:hover .imgBx a{
     margin: 0px;
 
-  }
+}
   
-  .container .card:hover .imgBx:hover{
+.container .card:hover .imgBx:hover{
     box-shadow: 0 5px 10px var(--fnd);
     border-radius: 10px;
-  }
+}
   
-  .container .card .imgBx img{
+.container .card .imgBx img{
     max-width: 100%;
-    height: 180px;
+    height: 200px;
     border-radius: 10px;
-  }
+}
   /* Fin imagen */
   
   /* Inicio contenido */
-  .container .card .content{
+.container .card .content{
     position: relative;
-    margin-top: -70px;
+    margin-top: -60px;
     text-align: left;
     color: #111;
     visibility: hidden;
@@ -64,14 +125,14 @@
     overflow: hidden;
     white-space: nowrap;
     white-space: initial;
-  }
+}
   
   
-  .container .card:hover .content {
+.container .card:hover .content {
     visibility: visible;
     opacity: 1;
-    margin-top: -55px;
+    margin-top: -58px;
     transition-delay: 0.4s ;
   /* Evitar desbordamiento de texto */
     white-space: initial;
-  }
+}
