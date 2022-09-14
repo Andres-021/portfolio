@@ -92,15 +92,17 @@
     z-index: 1;
 }
   
-.container .card:hover .imgBx a{
+/* Modificar el a de la carta */
+/* .container .card:hover .imgBx a{
     margin: 0px;
 
-}
+} */
   
-.container .card:hover .imgBx:hover{
+/* Poner sombreado a la imagen */
+/* .container .card:hover .imgBx:hover{
     box-shadow: 0 5px 10px var(--fnd);
     border-radius: 10px;
-}
+} */
   
 .container .card .imgBx img{
     max-width: 100%;
@@ -135,4 +137,17 @@
     transition-delay: 0.4s ;
   /* Evitar desbordamiento de texto */
     white-space: initial;
+}
+
+.container .card .content a {
+  color: #111;
+  text-decoration: none;
+}
+
+.container .card .content a:visited {
+  color: #111;
+}
+
+.container .card .content a:hover {
+  color: var(--fnd);
 }
