@@ -17,8 +17,8 @@
 /* Flecha de mostrar mas */
 .container .card .arrow{
   position: absolute;
-  width: 100%;
-  height: 20%;
+  width: 350px;
+  height: 50px;
   transform: translate(0, -50%);
     top: 95%;
     left: 50%;
@@ -38,8 +38,8 @@
 
   margin: -25px 0 0 -25px;
     display: block;
-    width: 1.5vw;
-    height: 1.5vw;
+    width: 1.2em;
+    height: 1.2em;
     border-bottom: 5px solid rgb(85, 85, 85);
     border-right: 5px solid rgb(85, 85, 85);
     transform: rotate(45deg);
