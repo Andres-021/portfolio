@@ -2,9 +2,10 @@
   position: absolute;
   /* background-image: url('../../public/blob.svg'); */
   background-color: rgb(37, 37, 37);
-  background-attachment: fixed;
+  /* background-attachment: fixed;
   background-repeat: no-repeat;
-  background-blend-mode: darken;
+  background-blend-mode: darken; */
+  /* justify-content: center; */
   text-align: center;
 
   height: 100vh;
