@@ -8,13 +8,28 @@
   z-index: 2;
 }
 
+.section h1{
+  margin-bottom: 10px;
+}
+
 .section-dark {
   background: #29B6F6;
   color: white;
 }
 
-.section-content {
-  max-width: 60%;
-  margin: 0 auto;
-  padding: 0;
+
+@media screen and (max-width: 500px){
+  .section-content {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 900px){
+  .section-content {
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 0;
+  }
 }

@@ -10,10 +10,7 @@
 /* Mobile menu */ 
 @media screen and (max-width: 500px) {
 
-
-
   .Nav-Content{
-    font-family: sans-serif;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -60,7 +57,6 @@
 
 @media screen and (min-width: 900px){
   .Nav-Content{
-    font-family: sans-serif;
     display:flex;
     align-items: center;
     justify-content: center;
