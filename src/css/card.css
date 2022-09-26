@@ -135,7 +135,7 @@
 .card:hover .content {
     visibility: visible;
     opacity: 1;
-    margin-top: -58px;
+    margin-top: -40px;
     transition-delay: 0.4s ;
   /* Evitar desbordamiento de texto */
     white-space: initial;
