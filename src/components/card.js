@@ -4,7 +4,6 @@ import '../css/card.css';
 export default function Card ({linkImg, linkRepo, title}) {
 
   return(
-    <div className="container">
       <div className="card">
         <div className="imgBx">
           {/* <a href={linkRepo}><img src={linkImg}/></a> */}
@@ -18,6 +17,5 @@ export default function Card ({linkImg, linkRepo, title}) {
           <span></span>
         </div>
       </div>
-    </div>
   );
 }
