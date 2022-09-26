@@ -8,7 +8,7 @@
 
 
 /* Mobile menu */ 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px){
 
   .Nav-Content{
     display:flex;
@@ -49,11 +49,6 @@
 
 }
 
-
-/* Table menu */
-@media Screen and (max-width: 600px) {
-
-}
 
 @media screen and (min-width: 900px){
   .Nav-Content{

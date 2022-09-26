@@ -10,6 +10,10 @@
 
   height: 100vh;
   width: 100%;
+
+  /* scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  scroll-behavior: auto; */
 }
 
 .app-tittle-1{

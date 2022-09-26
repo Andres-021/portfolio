@@ -4,7 +4,8 @@ import Section from './components/section';
 //import './App.css';
 import './css/app.css'
 import Card from './components/card';
-import Code from './img/codeImg.png'
+import Code from './img/codeImg.png';
+import Profile from './img/profile.jfif';
 
 const App = () => {
 
