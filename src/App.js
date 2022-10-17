@@ -5,7 +5,8 @@ import Section from './components/section';
 import './css/app.css'
 import Card from './components/card';
 import Code from './img/codeImg.png';
-import Profile from './img/profile.jfif';
+import Profile from './img/profile.jpg';
+import Github from './img/github.png';
 
 const App = () => {
 
@@ -55,19 +56,34 @@ const App = () => {
       </svg> */}
 
       <Section
-        title="Sobre mi"
+        // title="Sobre mi"
         subtitle={    
-          <div>
-            <p>
-              Estudiante de Ing. De Sistemas realizando 5to semestre con conocimientos en programación y muy amante de la
-              misma, con motivación para ir aprendiendo nuevas tecnologías y abierto al cambio que las mismas ejerzan. Me gusta
-              investigar y actualizarme acerca de los nuevos temas tecnologicos que se encuentren en la actualidad.
-            </p>
+          <div className='aboutme-container'>
+            <div className='aboutme-container-1'>
+              <h3>
+                Hola, soy
+              </h3>
+              <h1>
+                Andres Quintero
+              </h1>
+              <h4>Desarrollador web backend en formacion empirica</h4>
+              <br/>
+              <p>
+                Estudiante de Ing. De Sistemas realizando 5to semestre con conocimientos en programación y muy amante de la
+                misma, con motivación para ir aprendiendo nuevas tecnologías y abierto al cambio que las mismas ejerzan. Me gusta
+                investigar y actualizarme acerca de los nuevos temas tecnologicos que se encuentren en la actualidad.
+              </p>
 
-            {/* <p>
-              Lorem adsadsad dasdasdasipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse ut metus. Proin venenatis turpis sit amet ante consequat semper. Aenean nunc. Duis iaculis odio id lectus. Integer dapibus justo vitae elit. Nunc luctus, tortor quis iaculis tempus, urna odio iaculis erat, imperdiet lobortis orci lectus at eros. Ut a velit id odio malesuada nonummy. Aenean cursus metus a purus. Duis dapibus odio a enim. Aliquam ut diam sed nisl imperdiet gravida. Proin eget tellus ut ante dignissim dictum. Integer ut justo quis eros feugiat convallis. Praesent massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla egestas, nibh at malesuada nonummy, mi augue condimentum velit, a facilisis tortor ipsum non diam.
-            </p> */}
-          
+              <a href='https://github.com/Andres-021'>
+                <img src={Github}/>
+              </a>
+            
+            </div>
+            <div className='aboutme-container-2'>
+              <div className='img'>
+                <img className="profile" src={Profile}/>
+              </div>
+            </div>
           </div>
         }
         dark={true}
