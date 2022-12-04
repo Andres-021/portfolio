@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react';
+
 import logo from './logo.svg';
 import Nav from './components/nav';
 import Section from './components/section';
@@ -43,9 +45,31 @@ const App = () => {
     },
   ];
 
+  const [dark, setDark] = useState(false);
+
+  useEffect(() => {
+    if(localStorage.getItem('dark-mode') !== undefined &&
+      localStorage.getItem('dark-mode') !== null
+    ) {
+      setDark(true)
+    }
+  },[dark])
+
+  const darkMode = () => {
+    if(!dark){
+      setDark(true);
+      localStorage.setItem('dark-mode',true);
+      console.log('true');
+    }else{
+      setDark(false);
+      localStorage.clear();
+      console.log('false');
+    }
+  }
+
   return(
     <div className="app-contenido">
-      <Nav/>
+      <Nav onClick={darkMode}/>
       
       {/* <svg width="auto" height="auto" className='' viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
         <path fill="#29B6F6" d="M47,-63.7C62.8,-53.1,78.8,-42,86.1,-26.3C93.5,-10.7,92.1,9.4,83.5,24.4C74.9,22.4,59,49.4,43.9,59.8C28.7,70.3,14.4,81.2,0.2,80.9C-13.9,80.6,-27.8,69,-41.3,58C-54.9,47.1,-68.1,36.7,-75.4,22.5C-82.7,8.3,-84.1,-9.7,-78.1,-24.5C-72.1,-39.3,-58.7,-50.8,-44.4,-61.9C-30.2,-73,-15.1,-83.6,0.2,-83.9C15.6,-84.2,31.2,-74.3,47,-63.7Z" transform="translate(80 92)"/>
@@ -58,14 +82,14 @@ const App = () => {
       <Section
         // title="Sobre mi"
         subtitle={    
-          <div className='aboutme-container'>
+          <div className={dark?"dark-mode aboutme-container":"mode-transp aboutme-container"}>
             <div className='aboutme-container-1'>
-              <h3>
+              <p className='h3-container-aboutme'>
                 Hola, soy
-              </h3>
-              <h1>
+              </p>
+              <p className='h1-container-aboutme'>
                 Andres Quintero
-              </h1>
+              </p>
               <h4>Desarrollador web backend en formacion empirica</h4>
               <br/>
               <p>
@@ -74,16 +98,16 @@ const App = () => {
                 investigar y actualizarme acerca de los nuevos temas tecnologicos que se encuentren en la actualidad.
               </p>
 
-              <a href='https://github.com/Andres-021'>
+              {/* <a href='https://github.com/Andres-021'>
                 <img src={Github}/>
-              </a>
+              </a> */}
             
             </div>
-            <div className='aboutme-container-2'>
+            {/* <div className='aboutme-container-2'>
               <div className='img'>
                 <img className="profile" src={Profile}/>
               </div>
-            </div>
+            </div> */}
           </div>
         }
         dark={true}
@@ -91,26 +115,29 @@ const App = () => {
       />
       
       <Section
-        title="Proyectos"
+        // title="Proyectos"
         subtitle={ 
-          <div className='div-wrapp'>
-            { 
-              Cards.map((ele, i) => 
-                (<Card 
-                  key={i}
-                  title={ele.title}
-                  linkImg={ele.linkImg} 
-                  linkRepo={ele.linkRepo}
-                />)
-              )
-            }
+          <div className={dark?"dark-mode projects-container":"mode-transp projects-container"}>
+            <div className='projects-div-wrapp'>
+              { 
+                Cards.map((ele, i) => 
+                  (<Card 
+                    key={i}
+                    title={ele.title}
+                    linkImg={ele.linkImg} 
+                    linkRepo={ele.linkRepo}
+                  />)
+                )
+              }
+            </div>
           </div>
+          
         }
         dark={true}
         id="section2"
       />
 
-      <Section
+      {/* <Section
         title="Habilidades"
         subtitle={    
           <div className='div-wrapper'>
@@ -119,7 +146,7 @@ const App = () => {
         }
         dark={true}
         id="section3"
-      />
+      /> */}
     </div>
   )
 }

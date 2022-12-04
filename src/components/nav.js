@@ -2,7 +2,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import '../css/nav.css';
 
 
-const Nav = () => {
+const Nav = (props) => {
 
   return(
     <div className="Bar-Content">
@@ -44,7 +44,7 @@ const Nav = () => {
               to="section2"
               spy={true}
               smooth={true}
-              offset={-160}
+              offset={0}
               duration={500}
             >
               Proyectos
@@ -56,11 +56,19 @@ const Nav = () => {
               to="section3"
               spy={true}
               smooth={true}
-              offset={-160}
+              offset={160}
               duration={500}
             >
               Habilidades
             </Link>
+          </li>
+          <li className="li-none-style">
+            Modo oscuro
+            <div className="dark" onClick={props.onClick}></div>
+            {/* <label className='switch'>
+              <input type='checkbox' id='input' onChange={}/>
+              <span className='slider'></span>
+            </label> */}
           </li>
         </ul>
       </nav>

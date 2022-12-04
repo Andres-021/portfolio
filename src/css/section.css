@@ -1,13 +1,12 @@
 .section {
   position: relative;
-  padding-top: 100px;
+  /* padding-top: 100px; */
   padding-bottom: 0;
   height: 100vh;
   width: 100%;
   min-height: 100vh;
 
   z-index: 2;
-
 }
 
 .section h1{
@@ -15,10 +14,9 @@
 }
 
 .section-dark {
-  background: #29B6F6;
-  color: white;
+  /* background: #29B6F6; */
+  /* color: white; */
 }
-
 
 @media screen and (max-width: 500px){
   .section-content {

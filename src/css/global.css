@@ -25,33 +25,7 @@ body{
 }
 
 
-.div-wrapp{
-  display: flex;
 
-  /* align-items: center;
-  justify-content: center; */
-
-  background-color: #56a5ff;
-  margin: 0px;
-
-  width: 100%;
-  max-height: 325px;
-  padding: 10px;
-
-  scroll-snap-type: x mandatory;
-
-  /* overflow-y: hidden; */
-  overflow-y: hidden;
-
-  scroll-behavior: smooth;
-
-  /* white-space: nowrap; */
-
-  border-radius: 5px;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
-  /* box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset; */
-  /* box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset; */
-}
 
 
 /* Ocultar scroll en general */
